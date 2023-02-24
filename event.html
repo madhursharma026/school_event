@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event - Edible Schoolyard NYC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    navbarBG: 'white',
+                    navbarText: 'black',
+                    green: '#08A842'
+                },
+            }
+        }
+    }
+</script>
+
+<body>
+    <div class="fixed w-screen">
+        <nav class="flex items-center justify-between flex-wrap bg-navbarBG p-3 lg:flex hidden">
+            <div class="flex items-center flex-shrink-0 text-white mr-6 ml-4">
+                <img src="https://www.edibleschoolyardnyc.org/wp-content/themes/edibleschoolyard/assets/img/logo-stacked.svg"
+                    alt="#ImgNotFound">
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow"></div>
+                <div>
+                    <a href="#Home" class="lg:inline-block mr-5 text-xl text-navbarText">Home</a>
+                    <a href="#About" class="lg:inline-block mr-5 text-xl text-navbarText">About</a>
+                    <a href="#Contact" class="lg:inline-block mr-5 text-xl text-navbarText">Contact</a>
+                    <a href="#Admission" class="lg:inline-block mr-5 text-xl text-navbarText">Admission</a>
+                    <a href="#Events" class="lg:inline-block mr-5 text-xl text-navbarText">Events</a>
+                    <a href="#News" class="lg:inline-block mr-5 text-xl text-navbarText">News</a>
+                    <a href="#Gallery" class="lg:inline-block mr-10 text-xl text-navbarText">Gallery</a>
+                </div>
+            </div>
+        </nav>
+        <nav
+            class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 lg:hidden flex">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+                <a href="/" class="flex items-center">
+                    <img src="https://www.edibleschoolyardnyc.org/wp-content/themes/edibleschoolyard/assets/img/logo-horizontal.svg"
+                        class="h-16" alt="Logo">
+                </a>
+                <div class="flex md:order-2">
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none focus:ring-2 "
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </nav>
+        <hr>
+    </div>
+    <div class="pt-14"></div>
+
+    <h1 class="text-center text-5xl mt-20 mb-5 py-8"><b>EVENTS</b></h1>
+
+
+    <div class="flex justify-center items-center" style="height:100%; width: 100%; background-color: #FCF8F5;">
+        <div class="tracking-widest px-5 py-10">
+            <h1 class="text-center text-xl mb-5"><b>FEATURED</b></h1>
+            <div class="grid grid-rows-1 lg:grid-flow-col gap-2 lg:text-left text-center"
+                style="margin: auto; max-width: 1000px;">
+                <div class="lg:block hidden">
+                    <h1 class="text-3xl">𝑀𝒶𝓇</h1>
+                    <h1 class="text-3xl">6</h1>
+                </div>
+                <img src="https://www.edibleschoolyardnyc.org/wp-content/uploads/2023/01/Spring-Reception-Website-Hero-Image-2-1024x427.png"
+                    alt="#ImgNotFound" class="h-80 max-w-md" style="max-width: 450px; margin: auto;">
+                <div class="px-3">
+                    <h1 class="lg:text-2xl text-lg"><b>An Evening of Culinary Connection with Edible Schoolyard NYC</b>
+                    </h1>
+                    <h6 class="mt-5"><b>March 06, 2023</b></h6>
+                    <h6><b>6:00 pm</b></h6>
+                    <p class="text-sm my-5">We saved you a seat at the best Chef's Tables in town, with cocktails and
+                        dinner benefitting
+                        edible education for NYC students.</p>
+                    <a href="#details" class="underline text-sm">VIEW EVENT DETAILS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center" style="height:100%; width: 100%;">
+        <div class="tracking-widest px-5 py-10">
+            <h1 class="text-center text-xl mb-5"><b>ALL UPCOMING EVENTS</b></h1>
+            <div class="grid grid-rows-1 lg:grid-flow-col gap-2 lg:text-left text-center"
+                style="margin: auto; max-width: 1000px;">
+                <div class="lg:block hidden">
+                    <h1 class="text-3xl">𝑀𝒶𝓇</h1>
+                    <h1 class="text-3xl">6</h1>
+                </div>
+                <img src="https://www.edibleschoolyardnyc.org/wp-content/uploads/2023/01/Spring-Reception-Website-Hero-Image-2-1024x427.png"
+                    alt="#ImgNotFound" class="h-80 max-w-md" style="max-width: 450px; margin: auto;">
+                <div class="px-3">
+                    <h1 class="lg:text-2xl text-lg"><b>An Evening of Culinary Connection with Edible Schoolyard NYC</b>
+                    </h1>
+                    <h6 class="mt-5"><b>March 06, 2023</b></h6>
+                    <h6><b>6:00 pm</b></h6>
+                    <p class="text-sm my-5">We saved you a seat at the best Chef's Tables in town, with cocktails and
+                        dinner benefitting
+                        edible education for NYC students.</p>
+                    <a href="#details" class="underline text-sm">VIEW EVENT DETAILS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="text-center tracking-widest px-3 py-20">
+        <h1 class="text-xl"><b>JOIN OUR MAILING LIST</b></h1>
+        <p class="text-base py-4"><b>Sign up to receive updates about our programs, events, workshops, and more.</b></p>
+        <div class="grid lg:grid-rows-1 grid-rows-2 sm:grid-flow-col gap-4 justify-center items-center px-3">
+            <!-- <input type="text" class="border-2 border-black px-2" placeholder="First Name"> -->
+            <div>
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-left"
+                    for="grid-first-name">
+                    First Name
+                </label>
+                <input
+                    class="block w-full border border-gray-500 py-1 px-2 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text">
+            </div>
+            <!-- <input type="text" class="border-2 border-black px-2" placeholder="Last Name"> -->
+            <div>
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-left"
+                    for="grid-last-name">
+                    Last Name
+                </label>
+                <input
+                    class="block w-full border border-gray-500 py-1 px-2 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-last-name" type="text">
+            </div>
+            <!-- <input type="text" class="border-2 border-black px-2" placeholder="Email"> -->
+            <div>
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-left"
+                    for="grid-email">
+                    Email
+                </label>
+                <input
+                    class="block w-full border border-gray-500 py-1 px-2 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-email" type="text">
+            </div>
+            <!-- <input type="text" class="border-2 border-black px-2" placeholder="Zip Code"> -->
+            <div>
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-left"
+                    for="grid-zip-code">
+                    Zip Code
+                </label>
+                <input
+                    class="block w-full border border-gray-500 py-1 px-2 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-zip-code" type="text">
+            </div>
+        </div>
+        <button type="button"
+            class="bg-black sm:hover:bg-green text-white sm:hover:text-black px-4 py-2 mt-5">SUBSCRIBE</button>
+    </div>
+
+    <div class="text-center tracking-widest px-3 py-5">
+        <div class="grid md:grid-rows-1 md:grid-flow-col gap-4 justify-center items-center px-3">
+            <a href="#contact" class="text-base"><b>CONTACT US</b></a>
+            <a href="#more" class="text-base"><b>COME SEE US</b></a>
+            <a href="#press" class="text-base"><b>PRESS</b></a>
+            <a href="#careers" class="text-base"><b>CAREERS</b></a>
+            <b>
+                <a href="#fb" class="text-base"><i class="fa fa-facebook-f px-2"></i></a>
+                <a href="#twitter" class="text-base"><i class="fa fa-twitter px-2"></i></a>
+                <a href="#insta" class="text-base"><i class="fa fa-instagram px-2"></i></a>
+            </b>
+        </div>
+        <p class="text-sm text-gray-500">
+            © Copyright 2019 Edible Schoolyard NYC. All rights reserved.
+            <a href="#terms" class="underline">Terms of Use</a> and
+            <a href="#policy" class="underline">Privacy Policy</a>.
+            <a href="#credit" class="underline">Site Credits.</a>
+        </p>
+    </div>
+
+
+</body>
+
+</html>
